@@ -9,7 +9,7 @@ app = Flask(__name__)
 detector = dlib.get_frontal_face_detector()
 
 # Load the pre-trained shape predictor
-predictor_path = 'shape_predictor_68_face_landmarks.dat'
+predictor_path = '~/shape_predictor_68_face_landmarks (1).dat/shape_predictor_68_face_landmarks (1).dat'
 predictor = dlib.shape_predictor(predictor_path)
 
 def detect_gaze(landmarks, frame, gray):
